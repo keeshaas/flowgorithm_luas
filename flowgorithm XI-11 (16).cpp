@@ -21,22 +21,7 @@ int main() {
     cout << "Masukan tinggi : " ;
     cin >> tinggi;
     luas = alas * tinggi * 0.5;
+    cout << "Luas segitiga adalah : " ;
     cout << luas << endl;
     return 0;
 }
-
-// The following implements type conversion functions.
-string toString (double value) { //int also
-    stringstream temp;
-    temp << value;
-    return temp.str();
-}
-
-int toInt (string text) {
-    return atoi(text.c_str());
-}
-
-double toDouble (string text) {
-    return atof(text.c_str());
-}
-
